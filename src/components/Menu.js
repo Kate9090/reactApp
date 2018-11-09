@@ -1,11 +1,11 @@
 import React from 'react'
 import Section from './Section'
 import sections from '../dictionary';
-
+import 'bootstrap/dist/css/bootstrap.css'
 
 function First() {
   return (
-    <div class="menu">
+    <div class="container menu">
       <ul>
         <li>About myself</li>
         <li>Skills</li>

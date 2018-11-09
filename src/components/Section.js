@@ -12,14 +12,16 @@ class Section extends Component {
     const {section} = this.props
     const body = this.state.isOpen && <section>{section.text}</section>
     return (
-      <div>
-        <h2>
+      <div className="card mx-auto" style={{width:'50%'}}>
+        <h2 className="card-header">
         {section.title}
-        <button onClick={this.handleClick}>
+        <button onClick={this.handleClick} className="btn btn-primary btn-lg float-right">
         {this.state.isOpen ? "close" : "open"}</button>
         </h2>
-        {body}
-        <h3>creation date</h3>
+        <div className="card-body">
+          {body}
+        </div>
+        <h3 className="card-subtitle text-muted">creation date</h3>
       </div>
     )
   }
