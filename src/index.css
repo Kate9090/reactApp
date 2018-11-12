@@ -12,3 +12,46 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.container {
+  color: cadetblue;
+  width: 100%;
+}
+
+.menu__list {
+  list-style: none;
+  margin-right: 30px;
+  font-size: 18px;
+  transition: 0.3s;
+  position: relative;
+}
+
+.menu__list::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  height: 1px;
+  background-color: cadetblue;
+  width: 0px;
+  left: 50%;
+  transition: 0.3s;
+}
+
+.menu__list:hover {
+    color: #000;
+}
+
+.menu__list:hover::before {
+  width: 100%;
+  left: 0;
+  background-color: #000
+}
+
+.menu__lists {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(to right, #fff 0,rgb(218, 210, 202) 50%, #fff 100%);
+}
+
+
